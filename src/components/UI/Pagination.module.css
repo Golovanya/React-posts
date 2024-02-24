@@ -1,0 +1,33 @@
+ .root>li{
+    padding: 10px;
+    border: 1px solid rgb(97, 218, 251);
+    background-color: rgb(34, 34, 34);
+    font-weight: bold; 
+    cursor: pointer;
+    
+} 
+.root{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    color: rgb(97, 218, 251);
+    flex: 0 0 auto;
+    margin-bottom: 20px
+}; 
+
+a{
+    padding: 10px;
+    border: 1px solid rgb(97, 218, 251);
+    background-color: rgb(34, 34, 34);
+    font-weight: bold; 
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.none{
+    display: none;
+}
+.active{
+    color: red;
+}

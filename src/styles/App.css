@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+    list-style: none;
+}
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url("../../react-bacground.png") repeat;
+    z-index: 0;
+    overflow: hidden;
+    
+    
+}
+
+.app {
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   overflow: scroll;
+   scrollbar-width: none;
+}
+
+
+.app::-webkit-scrollbar {
+  display: none;
+
+}
+
+.postItem{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgb(97, 218, 251);
+    padding: 25px 10px;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    color: rgb(97, 218, 251);
+}
+
+.postItem>.btn{
+  background-color: white;
+}
+
+h3{
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.postItem p{
+  color: white;
+}
+
+.post-enter {
+    opacity: 0;
+  }
+.post-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+.post-exit {
+    opacity: 1;
+  }
+.post-exit-active {
+    transform: translateX(150px);
+    transition: all 500ms ease-in;
+  }
+  
+.under-input{
+  display: flex;
+  justify-content: space-between;
+}
+
+header{
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(97, 218, 251);
+  
+}
+
+.forms{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.forms>input{
+  width: 100%;
+}
+
+nav>h1, nav>a{
+  color: rgb(97, 218, 251);
+}
+nav{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.post-list{
+  flex: 1 0 auto;
+}
+select{
+  background-color: white;
+  border: 1px solid rgb(34, 34, 34);
+  padding: 10px 20px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+}
+
+.add-btn{
+  background-color: white;
+  border: 1px solid rgb(97, 218, 251);
+  width: 30%;
+  padding: 10px 30px;
+  display: inline;
+  border-radius: 6px;
+}
+
+.nav-btns{
+  display: flex;
+  gap: 30px;
+}
+
+.nav-btns>a{
+  border: 1px solid rgb(97, 218, 251);
+  padding: 10px 15px;
+  text-decoration: none;
+  color: rgb(97, 218, 251);
+  border-radius: 6px;
+}
+.nav-btns>a:hover{
+  background-color:rgb(97, 218, 251);
+  color: rgb(34, 34, 34);
+}
+
+a.active{
+  background-color:rgb(97, 218, 251);
+  color: rgb(34, 34, 34);
+}
+
+ .about {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 32px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(97, 218, 251);
+  border-radius: 6px;
+  gap: 20px;
+  padding: 10px 30px;
+}
+
+@media  (max-width: 770px){
+    .app, nav {
+      padding: 0 20px;
+    }
+    .about{
+      font-size: 24px;
+    }
+    
+  }
