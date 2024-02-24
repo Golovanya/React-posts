@@ -1,8 +1,9 @@
-# React + Vite
+# React posts
+## Приложение предоставляет следующий функционал:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    + Загрузка постов из JSON placeholder с использованием Axios
+    + Возможность фильтрации постов по заголовку и по тексту поста
+    + Пагинация
+    + Возможность добавлять новый пост через модальное окно
+    + Анимация при добавлении и удалении поста
+    + Роутинг с использованием React-router
